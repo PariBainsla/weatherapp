@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body,html {
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* background-color: rgb(238, 209, 148); */
+  background: url(https://plus.unsplash.com/premium_photo-1725408013619-e490825f0d97?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.weather-container{
+  background-color: rgb(203, 221, 231, 0.5);
+  width: 50vw;
+  height: 70vh;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  border-radius: 10px;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.input {
+  margin-top: 50px;
+  width: 30vw;
+  height: 7vh;
+  border-radius: 8px;
+  padding: 0 10px;
+  font-size: 20px;
+  background-color: rgb(250, 250, 250);
+  /* border: 2px solid rgb(88, 63, 8); */
+}
+
+.btn {
+  padding: 12px;
+  background-color: rgb(79, 133, 214);
+  /* border: 2px solid rgb(88, 63, 8); */
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: pointer;
+  width: 10vw;
+  margin-top: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-info {
+  margin: 20px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
